@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Mohammad Masudur Rahman</title>
-</head>
-
-<body>
-<h1>Hi, This is Masud</h1>
-</body>
-
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e6b36c"><meta name="description" content="Explore Masud's interactive campus of teaching, computing, and human–AI research."><title>Masud — A campus of ideas</title><link rel="stylesheet" href="style.css"></head><body>
+<main id="world" aria-label="Interactive campus"></main><div class="vignette"></div>
+<header><a class="brand" href="./"><span class="mark">m.</span><span>MASUD<span class="brand-sub">TEACHER · RESEARCHER · EXPLORER</span></span></a><button id="guide" class="pill">Campus guide <span>＋</span></button></header>
+<section class="intro"><p class="eyebrow">WELCOME TO MY LITTLE WORLD</p><h1>A campus<br>of <em>ideas.</em></h1><p>Teaching is an invitation to explore.<br>Take a drive. Find something that sparks your curiosity.</p><span class="intro-name">Mohammad Masudur Rahman</span></section>
+<div id="labels"></div><div id="nearby" hidden><span id="nearby-name"></span><button id="enter">Explore <kbd>Enter</kbd></button></div>
+<div class="bottom"><div class="controls"><span class="keyset"><kbd>W</kbd><span><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></span><span>Drive around<span class="hint">or use arrow keys · click a destination</span></span></div><div class="progress"><span id="count">0 / 4</span> places explored <button id="reset" aria-label="Reset car position">↺</button></div></div>
+<nav class="destinations" aria-label="Campus destinations"><button data-place="teaching"><span>01</span> Teaching studio</button><button data-place="research"><span>02</span> Research lab</button><button data-place="courses"><span>03</span> Course library</button><button data-place="office"><span>04</span> My office</button></nav>
+<div class="touch" aria-label="Driving controls"><button data-key="ArrowUp" aria-label="Drive forward">↑</button><div><button data-key="ArrowLeft" aria-label="Turn left">←</button><button data-key="ArrowDown" aria-label="Reverse">↓</button><button data-key="ArrowRight" aria-label="Turn right">→</button></div></div>
+<dialog id="panel"><button class="close" aria-label="Close section">×</button><div id="panel-content"></div></dialog>
+<div id="fallback" hidden><p>The 3D campus is unavailable on this device. Explore every section using the destination buttons below.</p></div>
+<script type="module" src="app.js"></script></body></html>
