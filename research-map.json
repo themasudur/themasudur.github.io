@@ -1,0 +1,39 @@
+{
+  "description": "Editorial topic hierarchy and thematic connections inferred from the CV's titles and descriptions. Connections are not citations, measured similarity scores, or claims of research influence.",
+  "topics": [
+    {"id":"human-ai","title":"Human–AI & responsible systems","color":"#985146","tint":"#f7ece6","description":"Conversational agents, ethical sensemaking, social interaction, and bias evaluation.","papers":[["health-agent","Healthcare relational agent"],["robo-friend","Robo-Friend"],["vlm-bias","Bias in vision–language models"],["ethical-sensemaking","Ethical sensemaking"]]},
+    {"id":"bangla","title":"Bangla language & speech","color":"#2f756c","tint":"#e9f4ef","description":"Bangla text processing, machine translation, spoken interfaces, and language-based services.","papers":[["bengali-translation","Bengali–English translation"],["bengali-inflections","Bengali verbal inflections"],["bangla-poems","Bangla poem classification"],["voice-assistant","Bengali voice assistant"],["smart-reception","Smart Reception"]]},
+    {"id":"clinical-text","title":"Clinical text & LLMs","color":"#62639b","tint":"#eeedf8","description":"Medical text generation, unsupervised analysis of clinical narratives, and topic modeling of health literature.","papers":[["medical-generation","GPT-2 for medical text"],["fall-injuries","Clinical fall narratives"],["palliative-care","Palliative-care research themes"]]},
+    {"id":"health-ml","title":"Health analytics & learning","color":"#3b708e","tint":"#eaf2f7","description":"Health prediction, federated learning, explainable models, and diabetes research.","papers":[["spinal-abnormalities","Spinal abnormality detection"],["colon-cancer","Colon cancer classification"],["federated-avc","Federated Naive Bayes"],["federated-diabetes","Federated diabetes detection"],["gestational-diabetes","Explainable gestational diabetes"],["physical-activity","Physical activity & diabetes"]]},
+    {"id":"vision","title":"Vision & creative computing","color":"#936b2d","tint":"#f7f0e0","description":"Visual recognition, neural image generation, activity recognition, and urban visual-pollution monitoring.","papers":[["artwork-genre","Artwork genre recognition"],["hactnet","hActNET activity recognition"],["style-transfer","Neural style transfer"],["visual-pollution","Urban visual pollution"]]},
+    {"id":"foundations","title":"Methods & secure systems","color":"#6f7a42","tint":"#f0f3e4","description":"Classification methods and the security considerations of connected systems.","papers":[["naive-bayes-tree","Scalable Naive Bayes tree"],["iot-security","IoT security"]]}
+  ],
+  "links": [
+    {"source":"health-agent","target":"ethical-sensemaking","reason":"Conversational agents in healthcare and human–AI interaction."},
+    {"source":"robo-friend","target":"health-agent","reason":"Social and relational agents that interact with people."},
+    {"source":"robo-friend","target":"ethical-sensemaking","reason":"Human interpretations of empathy and interaction with AI agents."},
+    {"source":"vlm-bias","target":"ethical-sensemaking","reason":"Responsible AI and the evaluation of AI in health-related settings."},
+    {"source":"bengali-translation","target":"bengali-inflections","reason":"Bengali language processing and linguistic variation."},
+    {"source":"bengali-inflections","target":"bangla-poems","reason":"Computational analysis of Bangla text."},
+    {"source":"bangla-poems","target":"smart-reception","reason":"Machine learning for Bangla language applications."},
+    {"source":"voice-assistant","target":"smart-reception","reason":"Bangla speech interfaces and automated spoken interaction."},
+    {"source":"smart-reception","target":"health-agent","reason":"Interactive agent systems that deliver user-facing services."},
+    {"source":"medical-generation","target":"ethical-sensemaking","reason":"AI-generated language in health-related interactions."},
+    {"source":"fall-injuries","target":"palliative-care","reason":"Unsupervised text analysis and topic discovery in health-related corpora."},
+    {"source":"medical-generation","target":"fall-injuries","reason":"Natural language processing of medical text."},
+    {"source":"fall-injuries","target":"ethical-sensemaking","reason":"Combining computational text analysis with interpretation in health contexts."},
+    {"source":"spinal-abnormalities","target":"colon-cancer","reason":"Feature selection and classification for health conditions."},
+    {"source":"colon-cancer","target":"gestational-diabetes","reason":"Ensemble learning for health classification."},
+    {"source":"federated-avc","target":"federated-diabetes","reason":"Federated learning with a Naive Bayes classifier."},
+    {"source":"federated-diabetes","target":"gestational-diabetes","reason":"Machine-learning approaches to diabetes detection."},
+    {"source":"physical-activity","target":"federated-diabetes","reason":"Type-2 diabetes as the application domain; methods differ."},
+    {"source":"artwork-genre","target":"style-transfer","reason":"Neural methods for visual art and image representation."},
+    {"source":"hactnet","target":"artwork-genre","reason":"Neural-network approaches to recognition tasks."},
+    {"source":"artwork-genre","target":"visual-pollution","reason":"Computer vision for recognition and classification of visual content."},
+    {"source":"vlm-bias","target":"artwork-genre","reason":"Analysis of visual representations in machine-learning systems."},
+    {"source":"naive-bayes-tree","target":"federated-avc","reason":"Naive Bayes-based classification methods."},
+    {"source":"naive-bayes-tree","target":"federated-diabetes","reason":"Naive Bayes-based classification methods."},
+    {"source":"iot-security","target":"smart-reception","reason":"Connected intelligent systems and their deployment considerations."},
+    {"source":"iot-security","target":"visual-pollution","reason":"Infrastructure considerations for connected monitoring applications."}
+  ]
+}
