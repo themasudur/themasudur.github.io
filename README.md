@@ -1,6 +1,6 @@
 # Mohammad Masudur Rahman — academic website
 
-A static academic website prepared from CV_Rahman_MM_2026(1).pdf. Original layout inspired by the research-first organization of https://he-zhang.com/; no source code, photographs, or paper figures were copied from that site.
+A static academic website prepared from CV_Rahman_MM_2026(1).pdf.
 
 ## Publish on GitHub Pages
 
